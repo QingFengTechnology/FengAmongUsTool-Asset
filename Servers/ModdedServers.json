@@ -1,0 +1,53 @@
+[
+    {
+      "$type": "StaticHttpRegionInfo, Assembly-CSharp",
+      "Name": "Modded EU (MEU)",
+      "PingServer": "au-eu.duikbo.at",
+      "Servers": [
+        {
+          "Name": "Http-1",
+          "Ip": "https://au-eu.duikbo.at",
+          "Port": 443,
+          "UseDtls": false,
+          "Players": 0,
+          "ConnectionFailures": 0
+        }
+      ],
+      "TargetServer": null,
+      "TranslateName": 1003
+    },
+    {
+      "$type": "StaticHttpRegionInfo, Assembly-CSharp",
+      "Name": "Modded NA (MNA)",
+      "PingServer": "www.aumods.us",
+      "Servers": [
+        {
+          "Name": "Http-1",
+          "Ip": "https://www.aumods.us",
+          "Port": 443,
+          "UseDtls": false,
+          "Players": 0,
+          "ConnectionFailures": 0
+        }
+      ],
+      "TargetServer": null,
+      "TranslateName": 1003
+    },
+    {
+      "$type": "StaticHttpRegionInfo, Assembly-CSharp",
+      "Name": "Modded Asia (MAS)",
+      "PingServer": "au-as.duikbo.at",
+      "Servers": [
+        {
+          "Name": "Http-1",
+          "Ip": "https://au-as.duikbo.at",
+          "Port": 443,
+          "UseDtls": false,
+          "Players": 0,
+          "ConnectionFailures": 0
+        }
+      ],
+      "TargetServer": null,
+      "TranslateName": 1003
+    }
+]
