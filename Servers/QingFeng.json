@@ -1,12 +1,12 @@
 [
   {
     "$type": "StaticHttpRegionInfo, Assembly-CSharp",
-    "Name": "<color=#16FFFF>清风服</color><color=#74695D>[宿迁]</color>",
-    "PingServer": "server.qingfengawa.top",
+    "Name": "<color=#16FFFF>清风服</color><color=#1B5EB7>[宁波]</color>",
+    "PingServer": "nb.server.qingfengawa.top",
     "Servers": [
       {
         "Name": "http-1",
-        "Ip": "https://server.qingfengawa.top",
+        "Ip": "https://nb.server.qingfengawa.top",
         "Port": 443,
         "UseDtls": false,
         "Players": 0,
