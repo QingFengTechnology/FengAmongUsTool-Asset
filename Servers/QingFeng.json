@@ -18,7 +18,7 @@
   },
   {
     "$type": "StaticHttpRegionInfo, Assembly-CSharp",
-    "Name": "<color=#16FFFF>清风服</color><color=#F69E49>[宿迁]</color>",
+    "Name": "<color=#16FFFF>清风服</color><color=#0AD1E8>[深圳]</color>",
     "PingServer": "server.qingfengawa.top",
     "Servers": [
       {
