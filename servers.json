@@ -1,0 +1,14 @@
+{
+    "清风": [
+        {"Name": "<color=#16FFFF>清风服</color><color=#1B5EB7>[宁波]</color>","Ip": "https://nb.server.qingfengawa.top","Port": 443}
+    ],
+    "Niko": [
+        {"Name": "<color=#ffe000ff>Niko233(NA)</color>","Ip": "https://au-us.niko233.me","Port": 443},
+        {"Name": "<color=#ffe000ff>Niko233(AS)</color>","Ip": "https://au-as.niko233.me","Port": 443},
+        {"Name": "<color=#ffe000ff>Niko233(EU)</color>","Ip": "https://au-eu.niko233.me","Port": 443},
+        {"Name": "<color=#ffe000ff>Niko233(CN)</color>","Ip": "https://au-as.niko233.me","Port": 443}
+    ]
+}
+
+
+
