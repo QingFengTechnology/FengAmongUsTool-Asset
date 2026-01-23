@@ -1,0 +1,71 @@
+name: Request Server Synchronize Repository
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  call-api:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Setup Node.js for MD5 calculation
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+      
+    - name: Install jq
+      run: apt-get install -y jq
+    
+    - name: Get current Unix timestamp
+      id: timestamp
+      run: echo "timestamp=$(date +%s)" >> $GITHUB_OUTPUT
+    
+    - name: Calculate API token
+      id: calculate-token
+      env:
+        CLIENT_TOKEN: ${{ secrets.PANEL_API_KEY }}
+        TIMESTAMP: ${{ steps.timestamp.outputs.timestamp }}
+      run: |
+        TOKEN=$(node -e "
+          const crypto = require('crypto');
+          const str = '1panel' + process.env.CLIENT_TOKEN + process.env.TIMESTAMP;
+          const token = crypto.createHash('md5').update(str).digest('hex');
+          console.log(token);
+        ")
+        echo "token=$TOKEN" >> $GITHUB_OUTPUT
+    
+    - name: Call API
+      id: call-api
+      env:
+        PANEL_ENDPOINT: ${{ secrets.PANEL_API_ENDPOINT }}
+        PANEL_TOKEN: ${{ steps.calculate-token.outputs.token }}
+        CRONJOB_ID: ${{ vars.CRONJOB_ID }}
+        TIMESTAMP: ${{ steps.timestamp.outputs.timestamp }}
+      run: |
+        response=$(curl -s -w "\n%{http_code}" \
+          -X POST "$PANEL_ENDPOINT/api/v2/toolbox/device/base" \
+          -H "1Panel-Token: $PANEL_TOKEN" \
+          -H "1Panel-Timestamp: $TIMESTAMP" \
+          -H 'accept: application/json' \
+          -H 'Content-Type: application/json' \
+          -d '{ "id": '$CRONJOB_ID' }')\
+          -k
+
+        http_code=$(echo "$response" | tail -n1)
+        response_body=$(echo "$response" | sed '$d')
+        
+        echo "Response status: $http_code"
+        echo "Response body: $response_body"
+        
+        code=$(echo "$response_body" | jq -r '.code // 0')
+        message=$(echo "$response_body" | jq -r '.message // "Unknown error"')
+        
+        if [ "$code" -ne 200 ]; then
+          echo "Error: API call failed with message: $message"
+          exit 1
+        else
+          echo "API call successful."
+        exit 0
+        fi
