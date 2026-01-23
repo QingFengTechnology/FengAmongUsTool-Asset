@@ -1,0 +1,11 @@
+{
+	"Id" : "FengServerInstallerNebula",
+	"Name" : "清风服安装包",
+	"Author" : "QingFeng",
+	"Description" : "用于以 Nebula 插件包的形式快速安装清风服。",
+	"Version" : "1.0.1",
+	"Build" : 0,
+	"Dependency" : [
+	],
+	"Hidden" : false
+}
