@@ -43,7 +43,7 @@ jobs:
       run: |
         response=$(curl -s -w "\n%{http_code}" \
           --insecure \
-          -X POST "$PANEL_ENDPOINT/api/v2/toolbox/device/base" \
+          -X POST "$PANEL_ENDPOINT/api/v2/cronjobs/handle" \
           -H "1Panel-Token: $PANEL_TOKEN" \
           -H "1Panel-Timestamp: $TIMESTAMP" \
           -H 'accept: application/json' \
