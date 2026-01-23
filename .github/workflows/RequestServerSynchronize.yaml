@@ -41,7 +41,8 @@ jobs:
         CRONJOB_ID: ${{ vars.CRONJOB_ID }}
         TIMESTAMP: ${{ steps.timestamp.outputs.timestamp }}
       run: |
-        response=$(curl -s -w -k "\n%{http_code}" \
+        response=$(curl -s -w "\n%{http_code}" \
+          --insecure \
           -X POST "$PANEL_ENDPOINT/api/v2/toolbox/device/base" \
           -H "1Panel-Token: $PANEL_TOKEN" \
           -H "1Panel-Timestamp: $TIMESTAMP" \
