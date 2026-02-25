@@ -1,22 +1,22 @@
 {
-  "CurrentRegionIdx": 4,
-  "Regions": [
-    {
-      "$type": "StaticHttpRegionInfo, Assembly-CSharp",
-      "Name": "<color=#16FFFF>清风服</color><color=#1B5EB7>[宁波]</color>",
-      "PingServer": "nb.server.qingfengawa.top",
-      "Servers": [
+    "CurrentRegionIdx": 4,
+    "Regions": [
         {
-          "Name": "http-1",
-          "Ip": "https://nb.server.qingfengawa.top",
-          "Port": 443,
-          "UseDtls": false,
-          "Players": 0,
-          "ConnectionFailures": 0
+            "$type": "StaticHttpRegionInfo, Assembly-CSharp",
+            "Name": "<font=Barlow-Light SDF><color=#58A5EA>清</color><color=#4E86EC>风</color><color=#4568EF>服</color><color=#3B4AF2>[</color><color=#322CF5>C</color><color=#280EF8>N</color><color=#2502FA>]</color></font>",
+            "PingServer": "server.qingfengawa.top",
+            "Servers": [
+                {
+                    "Name": "http-1",
+                    "Ip": "https://server.qingfengawa.top",
+                    "Port": 443,
+                    "UseDtls": false,
+                    "Players": 0,
+                    "ConnectionFailures": 0
+                }
+            ],
+            "TargetServer": null,
+            "TranslateName": 1003
         }
-      ],
-      "TargetServer": null,
-      "TranslateName": 1003
-    }
-  ]
+    ]
 }
