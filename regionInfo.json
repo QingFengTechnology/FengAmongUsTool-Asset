@@ -3,7 +3,7 @@
     "Regions": [
         {
             "$type": "StaticHttpRegionInfo, Assembly-CSharp",
-            "Name": "<font=Barlow-Light SDF><color=#58A5EA>清</color><color=#4E86EC>风</color><color=#4568EF>服</color><color=#3B4AF2>[</color><color=#322CF5>C</color><color=#280EF8>N</color><color=#2502FA>]</color></font>",
+            "Name": "<font=\"Barlow-Light SDF\"><color=#58A5EA>清</color><color=#4E86EC>风</color><color=#4568EF>服</color><color=#3B4AF2>[</color><color=#322CF5>C</color><color=#280EF8>N</color><color=#2502FA>]</color></font>",
             "PingServer": "server.qingfengawa.top",
             "Servers": [
                 {
