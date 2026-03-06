@@ -3,10 +3,10 @@
     "enable": true,
     "version": "3.3.1LTS",
     "versionDate": "2026-03-04T19:39",
-    "releaseLink": "https://github.com/QingFengTechnology/FengAmongUsTool/releases/tag/v3.3.1LTS",
+    "releaseLink": "https://github.com/BreezeCrew/FengAmongUsTool/releases/tag/v3.3.1LTS",
     "autoUpdate": false,
     "donloadUrl": {
-      "github": "https://github.com/QingFengTechnology/FengAmongUsTool/releases/download/v3.3.1LTS/FengAmongUsTool.zip",
+      "github": "https://github.com/BreezeCrew/FengAmongUsTool/releases/download/v3.3.1LTS/FengAmongUsTool.zip",
       "api": null
     }
   },
