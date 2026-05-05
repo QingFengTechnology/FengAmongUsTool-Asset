@@ -1,12 +1,12 @@
 {
   "release": {
     "enable": true,
-    "version": "3.3.1LTS",
-    "versionDate": "2026-03-04T19:39",
-    "releaseLink": "https://github.com/BreezeCrew/FengAmongUsTool/releases/tag/v3.3.1LTS",
+    "version": "3.4.0LTS",
+    "versionDate": "2026-05-05T19:17",
+    "releaseLink": "https://github.com/BreezeCrew/FengAmongUsTool/releases/tag/v3.4.0LTS",
     "autoUpdate": false,
     "donloadUrl": {
-      "github": "https://github.com/BreezeCrew/FengAmongUsTool/releases/download/v3.3.1LTS/FengAmongUsTool.zip",
+      "github": "https://github.com/BreezeCrew/FengAmongUsTool/releases/download/v3.4.0LTS/FengAmongUsTool.zip",
       "api": null
     }
   },
